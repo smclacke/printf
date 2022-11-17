@@ -6,7 +6,7 @@
 /*   By: SarahLouise <SarahLouise@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 11:04:40 by smclacke          #+#    #+#             */
-/*   Updated: 2022/11/17 14:44:11 by SarahLouise      ###   ########.fr       */
+/*   Updated: 2022/11/17 15:03:23 by SarahLouise      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,4 +100,17 @@ int	ft_printf(const char *str, ...)
 //     ft_printf("GIVE ME THE UPPER HEXA: %X\nGIVE ME THE LOWER HEXA: %x\nGIVE ME THE DECA: %i\n", X, x, i);
 //     ft_printf("Can I get some caps? %X\n", X);
 //     ft_printf("%u\n", u);
+// }
+
+// int main()
+// {
+// 	int x = 1997;
+// 	int j = 1882;
+// 	int *ptr = &x;
+	
+// 	x = j;
+// 	j = x;
+	
+// 	printf("The address is: %p, the value is %d\n", ptr, *ptr);
+// 	ft_printf("The address is: %p, the value is %d\n", ptr, *ptr);
 // }
