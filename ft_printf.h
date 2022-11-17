@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        ::::::::            */
-/*   ft_printf.h                                        :+:    :+:            */
-/*                                                     +:+                    */
-/*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
-/*                                                   +#+                      */
-/*   Created: 2022/11/07 13:58:29 by smclacke      #+#    #+#                 */
-/*   Updated: 2022/11/15 19:35:22 by smclacke      ########   odam.nl         */
+/*                                                        :::      ::::::::   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: SarahLouise <SarahLouise@student.42.fr>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/11/07 13:58:29 by smclacke          #+#    #+#             */
+/*   Updated: 2022/11/17 13:56:05 by SarahLouise      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,14 @@ int			print_char(int c);
 
 int			print_string(char *str);
 
-int			print_p(unsigned long n, char *base);
+int	        print_p(unsigned long long n, unsigned int base);
 
-int			print_nbr(int n, char *base);
+void        putchar_lower(char c);
 
-int			print_un(unsigned int n, char *base);
+void        putchar_upper(char c);
+
+int	        print_nbr(long long n, int base);
+
+int	        print_nbr2(unsigned long long n, unsigned int base);
 
 #endif
