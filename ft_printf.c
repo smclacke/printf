@@ -6,7 +6,7 @@
 /*   By: SarahLouise <SarahLouise@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 11:04:40 by smclacke          #+#    #+#             */
-/*   Updated: 2022/11/17 15:03:23 by SarahLouise      ###   ########.fr       */
+/*   Updated: 2022/11/17 16:35:02 by SarahLouise      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,25 +82,18 @@ int	ft_printf(const char *str, ...)
 	va_end(valist);
 	return (char_count);
 }
+// x X and i test
 
 // int main(void)
 // {
-//     int                    c = 'G';
-//     int                    d = 89;
-//     char               *str = "a string";
-//     long long             i = -9873458;
-//     unsigned long         X = 349886;
-//     unsigned long         x = 349886;
-//     long long             i = 349886;
-//     unsigned long         u = 9847;
-//     unsigned long long          X = 857698493487;
-//     unsigned long long    p = 3498;
-
-// /*  printf("haykf%%gjjg, %c%d%s%i\n", c, d, str, i); */
+//     unsigned long         x = 85769887;
+//     long long             i = 85769887;
+//     unsigned long long    X = 85769887;
+    
 //     ft_printf("GIVE ME THE UPPER HEXA: %X\nGIVE ME THE LOWER HEXA: %x\nGIVE ME THE DECA: %i\n", X, x, i);
-//     ft_printf("Can I get some caps? %X\n", X);
-//     ft_printf("%u\n", u);
 // }
+
+// p test
 
 // int main()
 // {
@@ -113,4 +106,17 @@ int	ft_printf(const char *str, ...)
 	
 // 	printf("The address is: %p, the value is %d\n", ptr, *ptr);
 // 	ft_printf("The address is: %p, the value is %d\n", ptr, *ptr);
+// }
+
+// c s d u % test
+
+// int main()
+// {
+// 	int           c = 'G';
+// 	int           d = 89;
+// 	unsigned int  u = 768;
+// 	char          *str = "a string";
+// 	char          perc = '%';
+
+// 	ft_printf("c: %c\nd: %d\nu: %u\nstr: %s\nperc: %%\n", c, d, u, str, perc);
 // }
