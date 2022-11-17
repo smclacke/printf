@@ -6,7 +6,7 @@
 /*   By: SarahLouise <SarahLouise@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 11:04:40 by smclacke          #+#    #+#             */
-/*   Updated: 2022/11/17 14:18:57 by SarahLouise      ###   ########.fr       */
+/*   Updated: 2022/11/17 14:44:11 by SarahLouise      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,16 +83,21 @@ int	ft_printf(const char *str, ...)
 	return (char_count);
 }
 
-// int	main(void)
+// int main(void)
 // {
-// 	// int				      c = 'G';
-// 	// int				      d = 89;
-// 	// char			      *str = "a string";
-// 	// long long             i = -9873458;
-// 	unsigned long         x = 349886;
-// 	long long             i = 349886;
-// 	// unsigned long long    p = 3498;
+//     int                    c = 'G';
+//     int                    d = 89;
+//     char               *str = "a string";
+//     long long             i = -9873458;
+//     unsigned long         X = 349886;
+//     unsigned long         x = 349886;
+//     long long             i = 349886;
+//     unsigned long         u = 9847;
+//     unsigned long long          X = 857698493487;
+//     unsigned long long    p = 3498;
 
-// /* 	printf("haykf%%gjjg, %c%d%s%i\n", c, d, str, i); */
-// 	ft_printf("GIVE ME THE HEXA: %x\nGIVE ME THE DECA: %i\n", x, i);
+// /*  printf("haykf%%gjjg, %c%d%s%i\n", c, d, str, i); */
+//     ft_printf("GIVE ME THE UPPER HEXA: %X\nGIVE ME THE LOWER HEXA: %x\nGIVE ME THE DECA: %i\n", X, x, i);
+//     ft_printf("Can I get some caps? %X\n", X);
+//     ft_printf("%u\n", u);
 // }

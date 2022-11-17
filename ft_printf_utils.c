@@ -6,7 +6,7 @@
 /*   By: SarahLouise <SarahLouise@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 18:12:40 by smclacke          #+#    #+#             */
-/*   Updated: 2022/11/17 13:49:58 by SarahLouise      ###   ########.fr       */
+/*   Updated: 2022/11/17 14:44:53 by SarahLouise      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,6 @@ int	print_nbr2(unsigned long long n, unsigned int base)
 	i = 1;
 	if (n >= base)
 		print_nbr2(n / base, base);
-	putchar_upper((i % base) + '0');
+	putchar_upper((n % base) + '0');
 	return (i);
 }
