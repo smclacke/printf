@@ -6,7 +6,7 @@
 /*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/07 13:58:29 by smclacke      #+#    #+#                 */
-/*   Updated: 2022/11/19 19:30:23 by smclacke      ########   odam.nl         */
+/*   Updated: 2022/11/19 23:10:14 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,9 @@ int			print_char(char c);
 
 int			print_string(char *str);
 
-void		putchar_lower(int c);
+int			putchar_lower(int c);
 
-void		putchar_upper(int c);
+int			putchar_upper(int c);
 
 int			print_nbr(long long n, int base);
 

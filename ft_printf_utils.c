@@ -6,13 +6,13 @@
 /*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/07 18:12:40 by smclacke      #+#    #+#                 */
-/*   Updated: 2022/11/19 17:11:20 by smclacke      ########   odam.nl         */
+/*   Updated: 2022/11/19 23:13:57 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	putchar_lower(int c)
+int	putchar_lower(int c)
 {
 	if (c == 58)
 		write(1, "a", sizeof(char));
@@ -28,9 +28,10 @@ void	putchar_lower(int c)
 		write(1, "f", sizeof(char));
 	else
 		write(1, &c, sizeof(char));
+	return (1);
 }
 
-void	putchar_upper(int c)
+int	putchar_upper(int c)
 {
 	if (c == 58)
 		write(1, "A", sizeof(char));
@@ -46,21 +47,22 @@ void	putchar_upper(int c)
 		write(1, "F", sizeof(char));
 	else
 		write(1, &c, sizeof(char));
+	return (1);
 }
 
 int	print_nbr(long long n, int base)
 {
 	int	i;
 
-	i = 1;
+	i = 0;
 	if (n < 0 && base == 10)
 	{
 		n *= -1;
-		write (1, "-", sizeof(char));
+		i += write (1, "-", sizeof(char));
 	}
 	if (n >= base)
-		print_nbr(n / base, base);
-	putchar_lower((n % base) + '0');
+		i += print_nbr(n / base, base);
+	i += putchar_lower((n % base) + '0');
 	return (i);
 }
 
@@ -68,10 +70,10 @@ int	print_nbr2(unsigned long long n, unsigned int base)
 {
 	int		i;
 
-	i = 1;
+	i = 0;
 	if (n >= base)
-		print_nbr2(n / base, base);
-	putchar_upper((n % base) + '0');
+		i += print_nbr2(n / base, base);
+	i += putchar_upper((n % base) + '0');
 	return (i);
 }
 
@@ -79,9 +81,9 @@ int	print_p(unsigned long long n, unsigned int base)
 {
 	int	i;
 
-	i = 1;
+	i = 0;
 	if (n >= base)
-		print_p(n / base, base);
-	putchar_lower((n % base) + '0');
+		i += print_p(n / base, base);
+	i += putchar_lower((n % base) + '0');
 	return (i);
 }
