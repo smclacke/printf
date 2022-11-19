@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_printf_utils.c                                  :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: SarahLouise <SarahLouise@student.42.fr>    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 18:12:40 by smclacke          #+#    #+#             */
-/*   Updated: 2022/11/17 14:59:56 by SarahLouise      ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   ft_printf_utils.c                                  :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2022/11/07 18:12:40 by smclacke      #+#    #+#                 */
+/*   Updated: 2022/11/19 17:11:20 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void    putchar_lower(char c)
+void	putchar_lower(int c)
 {
 	if (c == 58)
 		write(1, "a", sizeof(char));
@@ -27,10 +27,10 @@ void    putchar_lower(char c)
 	else if (c == 63)
 		write(1, "f", sizeof(char));
 	else
-		write(1, &c, 1);
+		write(1, &c, sizeof(char));
 }
 
-void    putchar_upper(char c)
+void	putchar_upper(int c)
 {
 	if (c == 58)
 		write(1, "A", sizeof(char));
@@ -45,12 +45,12 @@ void    putchar_upper(char c)
 	else if (c == 63)
 		write(1, "F", sizeof(char));
 	else
-		write(1, &c, 1);
+		write(1, &c, sizeof(char));
 }
 
 int	print_nbr(long long n, int base)
 {
-	int i;
+	int	i;
 
 	i = 1;
 	if (n < 0 && base == 10)
@@ -77,7 +77,7 @@ int	print_nbr2(unsigned long long n, unsigned int base)
 
 int	print_p(unsigned long long n, unsigned int base)
 {
-	int   i;
+	int	i;
 
 	i = 1;
 	if (n >= base)
