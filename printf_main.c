@@ -1,4 +1,18 @@
 
+// THE BEST MAIN EVER
+
+
+// #include "ft_printf.h"
+// #include <stdio.h>
+// #include <limits.h>
+
+// int main(void)
+// {
+// 	char str[] = "abc%pabc";
+// 	printf("|%d\n", ft_printf(str, NULL, 'a'));
+// 	printf("|%d\n", printf(str, NULL, 'a'));
+// 	return 0;
+// }
 
 // x X and i test
 
