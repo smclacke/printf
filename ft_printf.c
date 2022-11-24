@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_printf.c                                        :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
+/*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2022/11/05 11:04:40 by smclacke      #+#    #+#                 */
-/*   Updated: 2022/11/23 19:36:17 by smclacke      ########   odam.nl         */
+/*   Created: 2022/11/24 15:47:53 by smclacke      #+#    #+#                 */
+/*   Updated: 2022/11/24 15:47:54 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 

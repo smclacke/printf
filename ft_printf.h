@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_printf.h                                        :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
+/*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2022/11/07 13:58:29 by smclacke      #+#    #+#                 */
-/*   Updated: 2022/11/23 19:36:28 by smclacke      ########   odam.nl         */
+/*   Created: 2022/11/24 15:47:41 by smclacke      #+#    #+#                 */
+/*   Updated: 2022/11/24 15:52:29 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,6 @@
 int			ft_printf(const char *str, ...);
 
 size_t		ft_strlen(const char *s);
-
-int			print_char(char c);
-
-int			print_string(char *str);
-
-int			putchar_lower(int c);
-
-int			putchar_upper(int c);
 
 int			print_nbr(long long n, int base);
 

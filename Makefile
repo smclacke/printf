@@ -3,10 +3,10 @@
 #                                                         ::::::::             #
 #    Makefile                                           :+:    :+:             #
 #                                                      +:+                     #
-#    By: SarahLouise <SarahLouise@student.42.fr>      +#+                      #
+#    By: smclacke <smclacke@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
-#    Created: 2022/11/05 11:01:41 by smclacke      #+#    #+#                  #
-#    Updated: 2022/11/19 22:45:36 by smclacke      ########   odam.nl          #
+#    Created: 2022/11/24 15:48:25 by smclacke      #+#    #+#                  #
+#    Updated: 2022/11/24 15:48:26 by smclacke      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 

@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_strlen.c                                        :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
+/*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2022/11/09 11:22:40 by smclacke      #+#    #+#                 */
-/*   Updated: 2022/11/15 19:23:08 by smclacke      ########   odam.nl         */
+/*   Created: 2022/11/24 15:48:19 by smclacke      #+#    #+#                 */
+/*   Updated: 2022/11/24 15:48:20 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
