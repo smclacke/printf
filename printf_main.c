@@ -1,6 +1,4 @@
 
-// THE BEST MAIN EVER
-
 
 // #include "ft_printf.h"
 // #include <stdio.h>
