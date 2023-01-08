@@ -6,30 +6,41 @@
 #    By: smclacke <smclacke@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2022/11/24 15:48:25 by smclacke      #+#    #+#                  #
-#    Updated: 2022/11/24 15:48:26 by smclacke      ########   odam.nl          #
+#    Updated: 2023/01/08 15:03:34 by smclacke      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
+
+HEADER = ft_printf.h
+
 SRCS = ft_printf.c          \
 	   ft_printf_utils.c    \
 	   ft_strlen.c
-OBJS = $(SRCS:.c=.o)
-CC = cc
+
+OBJS = $(SRCS:%.c=%.o)
+
+CC = gcc
 CFLAGS = -Wall -Wextra -Werror
-INCLUDES = ft_printf.h
+ARCHIVE = ar rcs
+RM = rm -rf
+
 ALL = $(OBJS)
 
 all: $(NAME)
-$(NAME): $(ALL) $(INCLUDES)
-	@ar rcs $(NAME) $?
-	@echo "compile!!"
+
+$(NAME): $(ALL) $(HEADER)
+	@ $(ARCHIVE) $(NAME) $?
+	@ echo "Made!"
+
 clean:
-	@rm -rf *.o
+	@ $(RM) $(OBJS)
+	@ echo "Clean!"
+
 fclean: clean
-	@rm -f $(NAME)
-	@echo "it's clean!"
+	@ $(RM) $(NAME)
+	@ echo "fCleaned!"
+
 re: fclean all
-	@echo "do it all again"
 
 .PHONY: all clean make fclean re
